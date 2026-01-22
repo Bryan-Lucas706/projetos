@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100vh;
+            background-image: linear-gradient(to top, #59442E,#cb9c69);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+        }
+
+        main{
+            width: 250px;
+            height: 515px;
+            background-color: white;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        main .fundo{
+            height: 40%;
+            border-radius: 20px 20px 0px 0px;
+            background: black url(imagens/fundo-login.jpg) center center;
+            background-size: cover;
+        }
+
+        main .login{
+            height: 50%;
+            padding: 8px;
+            background-color: white;
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        main h1{
+            margin: 0;
+            text-align: center;
+        }
+
+        main p{
+            text-align: justify;
+            padding: 5px;
+            font-size: 0.8em;
+        }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="fundo"></section>
+      <section class="login">
+        <h1>Login</h1>
+        <p>
+          Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder
+          fazer as configurações no seu ambiente.
+        </p>
+
+        <form action="#" method="get" autocomplete="on">
+          <div>
+            <label for="email">
+              <span id="emoji" class="material-symbols-outlined">person</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="digite seu E-mail"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="senha">
+              <span id="emoji" class="material-symbols-outlined">vpn_key</span>
+            </label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="digite sua senha"
+              autocomplete="current-password"
+              min="8"
+              required
+            />
+          </div>
+
+          <p>
+            <input type="submit" value="Enviar" />
+            <input type="submit" value="Esqueci a senha" />
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
