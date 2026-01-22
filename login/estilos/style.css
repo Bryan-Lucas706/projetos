@@ -1,0 +1,109 @@
+/* Mobile */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --marrom-escuro: #5c4730;
+  --marrom: #86725c;
+  --marrom-claro: #b1a497;
+  --bege-escuro: #dbc4ab;
+  --bege: #ffcf9c;
+  --verde: #4b6556;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top, var(--marrom-escuro), var(--bege));
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  font-size: 0.7em;
+}
+
+main {
+  width: 250px;
+  height: 515px;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+main .fundo {
+  height: 40%;
+  border-radius: 20px 20px 0px 0px;
+  background: black url(../imagens/fundo-login.jpg) center center;
+  background-size: cover;
+}
+
+main .login {
+  height: 50%;
+  padding: 8px;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+}
+
+main h1 {
+  text-align: center;
+  color: var(--marrom-escuro);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+main p {
+  text-align: justify;
+  padding: 5px;
+}
+
+form div {
+  display: flex;
+  margin: 3px;
+  background-color: var(--marrom);
+  padding: 5px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+#emoji {
+  font-size: 2.8em;
+  color: white;
+}
+
+form input {
+  border: 0px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  color: var(--verde);
+}
+
+form input:focus {
+  background-color: var(--bege-escuro);
+  outline: none;
+}
+
+form #entrar {
+  margin-bottom: 4px;
+  background-color: var(--marrom);
+  color: white; 
+  transition: 0.2s;
+}
+
+form #entrar:hover {
+  background-color: #5c4730;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+form #esqueci {
+  border: 2px solid var(--bege-escuro);
+  transition: 0.2s;
+}
+
+form #esqueci:hover {
+  background-color: var(--bege-escuro);
+  cursor: pointer;
+  transform: scale(1.02);
+}
