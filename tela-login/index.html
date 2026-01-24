@@ -46,14 +46,17 @@
               id="senha"
               placeholder="digite sua senha"
               autocomplete="current-password"
-              min="8"
+              minlength="8"
               required
             />
           </div>
 
           <p>
             <input id="entrar" type="submit" value="Entrar" />
-            <input id="esqueci" type="submit" value="Esqueci a senha" />
+            <a href="esqueci.html">
+              Esqueci a senha
+              <span id="emoji" class="material-symbols-outlined">mail</span>
+            </a>
           </p>
         </form>
       </section>

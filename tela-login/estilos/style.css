@@ -30,7 +30,7 @@ main {
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
-  transition: width 0.5s, height 0.5s ease;
+  transition: width 0.5s, height 0.5s ease-out;
 }
 
 main .fundo {
@@ -78,7 +78,6 @@ form input {
   padding: 12px;
   width: 100%;
   border-radius: 6px;
-  color: var(--verde);
 }
 
 form input:focus {
@@ -99,12 +98,27 @@ form #entrar:hover {
   transform: scale(1.02);
 }
 
-form #esqueci {
+form a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 12px;
+  background-color: #eeeeeec1;
+  color: var(--verde);
+  
+  
   border: 2px solid var(--bege-escuro);
   transition: 0.2s;
+  border-radius: 6px;
 }
 
-form #esqueci:hover {
+a > #emoji{
+  color: var(--verde);
+  font-size: 1em;
+}
+
+form a:hover {
   background-color: var(--bege-escuro);
   cursor: pointer;
   transform: scale(1.02);
