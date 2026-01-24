@@ -105,9 +105,7 @@ form a {
   text-decoration: none;
   font-size: 1.2em;
   padding: 12px;
-  background-color: #9b2626c1;
-  color: var(--verde);
-  
+  background-color: #eeeeeec1;
   
   border: 2px solid var(--bege-escuro);
   border-radius: 6px;
