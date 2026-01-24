@@ -99,6 +99,7 @@ form input[type="submit"]:hover {
 }
 
 form a {
+  display: block;
   display: flex;
   justify-content: center;
   text-decoration: none;
