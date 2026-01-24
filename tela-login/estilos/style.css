@@ -85,14 +85,14 @@ form input:focus {
   outline: none;
 }
 
-form #entrar {
+form input[type="submit"] {
   margin-bottom: 4px;
   background-color: var(--marrom);
   color: white; 
   transition: 0.2s;
 }
 
-form #entrar:hover {
+form input[type="submit"]:hover {
   background-color: #5c4730;
   cursor: pointer;
   transform: scale(1.02);
