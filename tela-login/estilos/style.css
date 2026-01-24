@@ -100,12 +100,12 @@ form input[type="submit"]:hover {
 
 form a {
   display: block;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   text-decoration: none;
   font-size: 1.2em;
   padding: 12px;
   background-color: #eeeeeec1;
+  color: var(--verde);
   
   border: 2px solid var(--bege-escuro);
   border-radius: 6px;
